@@ -232,6 +232,13 @@ plugins:
           socks5: "127.0.0.1:1080"
           enable_pipeline: true
 
+  - tag: forward_surge
+    type: fast_forward
+    args:
+      upstream:
+        - addr: "198.18.0.2"
+          enable_pipeline: true
+
   # 转发至本地无污染服务器的插件
   # [easymosdns|tunadns]
   - tag: forward_easymosdns
